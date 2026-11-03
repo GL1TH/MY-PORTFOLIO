@@ -19,12 +19,12 @@ header {
 /* Navigation */
 nav {
     background-color: #1f3155;
-    text-align: center;
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -116,11 +116,6 @@ footer {
     box-sizing: border-box;
 }
 
-.project-card {
-    padding: 20px;
-    border-radius: 10px;
-}
-
 #projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -131,14 +126,20 @@ footer {
     grid-column: 1 / -1;
 }
 
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive layout */
 @media (max-width: 600px) {
     #projects {
         grid-template-columns: 1fr;
     }
 
-    nav {
-        flex-wrap: wrap;
-        gap: 12px;
+    section {
+        padding: 25px;
     }
 }
+
 
