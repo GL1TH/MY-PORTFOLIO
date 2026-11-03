@@ -1,0 +1,144 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: hsl(214, 97%, 38%);
+    color: #243047;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1f3155;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #70c1ff;
+}
+
+/* Main content */
+main {
+
+    color: gray;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Headings */
+h2 {
+    color: #1769aa;
+    border-bottom: 2px solid #dbe5f1;
+    padding-bottom: 8px;
+}
+
+/* Project cards */
+article {
+    border: 1px solid #dbe5f1;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article h3 {
+    color: #14213d;
+}
+
+/* Contact form */
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b9c6d8;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #14213d;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
