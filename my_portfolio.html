@@ -10,9 +10,31 @@
 
     <body>
     
-    <header>
+    <header class="hero">
+    <div class="hero-content">
+        <p class="hero-intro">HELLO, I'M</p>
+
         <h1>DAVID BRIGHT</h1>
-    </header>
+
+        <h2>Mechatronics Engineering Student</h2>
+
+        <p class="hero-description">
+            I'm passionate about building intelligent systems
+            through automation, robotics, control systems and
+            machine learning.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="hero-btn primary-btn">
+                View My Projects
+            </a>
+
+            <a href="#contact" class="hero-btn secondary-btn">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</header>
 
     <nav>
         <a href="#about">About</a>
@@ -31,17 +53,18 @@
                     automation, robotics, control systems and machine learning.
                 </p>   
             </section>
+            
+            <section id="skills">
+            <h2>MY SKILLS</h2>
 
-            <section id="skills"> 
-                <h2>MY SKILLS</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Arduino</li>
-                    <li>MATLAB</li>
-                    <li>Machine Learning</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">Arduino</span>
+                <span class="skill">MATLAB</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
             </section>
 
             <section id="projects"> 
@@ -77,24 +100,46 @@
             </section>
 
             <section id="contact"> 
-                <h2>CONTACT ME</h2>
-                    <form>
-                        <label for="phone">Phone No:</label>
-                        <input type="tel" id="phone" name="phone">
+                <section id="contact">
+                    <h2>LET'S CONNECT</h2>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <p>
+                        Have a project, opportunity or collaboration in mind?
+                        I'd love to hear from you.
+                    </p>
+
+                    <form>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name"
+                            placeholder="Your name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Your email" required>
 
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                        <textarea id="message" name="message" rows="5"
+                                placeholder="Write your message..." required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
             </section>
 
         </main>
 
         <footer>
-            <p>© 2026 David Bright</p>
+            <p>DAVID BRIGHT | MECHATRONICS ENGINEERING</p>
+
+            <div class="social-links">
+                <a href="https://github.com/GL1TH"
+                target="_blank" rel="noopener noreferrer">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/david-abioye01"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+
+            <p>© 2026 David Bright. All rights reserved.</p>
         </footer>
 
     </body>
